@@ -1,0 +1,59 @@
+ /*
+Ways to add Css:- 
+1. Inline
+2. Internal
+3. External
+
+Priority:- 
+    Inline > Internal > External
+    
+CSS SELECTORS:-
+        Universal :- *{ --- } 
+        I.D
+        Class
+        Attribute
+        Element (elements name):-  p{}
+
+Preference:-
+        ID(unique) > Class(more generic)
+
+*/
+/* *{
+    color:red;
+    font-size: 20px;
+} */
+body{
+    background-color: yellowgreen;
+}
+.container{
+    color: brown;
+}
+#firstclass{
+    color:black;
+    font-size:200%;
+    text-align: center;
+}
+#img{
+    margin : auto;
+    display: block;
+}
+#firstpara{
+    color:green;
+}
+.differentpara{
+    color:aqua;
+}
+input[type=username]{
+    background-color: darkslateblue;
+}
+input[type=password]{
+    background-color:hotpink;
+}
+section{
+    min-height: 900px;
+    width: 700px;
+    background-color: whitesmoke;
+    margin: auto;
+    border:black ;
+    padding:20px 20px 20px 20px;
+}

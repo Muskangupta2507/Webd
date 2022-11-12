@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+.container{
+    background: steelblue;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3,20% 50% 30%);
+    grid-template-rows: repeat(3, 10% 60% 30%);
+    height: 100vh;
+
+    grid-template-areas: 'header header header'
+    'nav main aside'
+    'nav footer footer' ;
+}
+header,main,footer,aside,nav{
+    border: 2px solid skyblue;
+}
+header{
+    grid-area: header ;
+}
+nav{
+    grid-area: nav;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+aside{
+    grid-area: aside;
+}

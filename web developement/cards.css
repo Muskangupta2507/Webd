@@ -1,0 +1,30 @@
+body{
+    background: #edf2f8;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    line-height: 1.7;
+    font-size: 13px;
+}
+.testimonials{
+    width: 960px;
+    height: 100px auto;
+    border: 2px solid black;
+    display: grid;
+    padding: 10px;
+
+}
+.card-header{
+    align-items: flex-start;
+}
+.card_info{
+    font-size: 16px;
+    margin: 10px;
+    line-height: 1.5 em;
+}
+.card:nth-last-of-type(1){
+    grid-column: 1/3;
+    background-color: blueviolet;
+
+}
+.card:nth-last-of-type(4){
+    grid-row: 2/4;
+}

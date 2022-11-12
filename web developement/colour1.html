@@ -1,0 +1,115 @@
+<!-- 
+    colours:
+    0-255 - each decimal range
+    0-f hexadecimal values represents it.
+    a,b- red ; cs,d - green ; e,f - blue ; eg. #ee2031; 21eeff (ff for highest value of blue for lowest blue)
+    black :- 000;
+    white :- fff;
+    rgba(00,255,00,1) {a-alpha (1 or 0)}
+    hsl(360,100%,50%) :- { hsl(hue, saturation, lightness)}
+    em:- parent dependent
+    rem :- root dependent
+    margin :20px 50px (top,bottom)
+    css positions :- offset position
+    static :- no change (by deafult)
+    relative:-(the block will shift slight below and slight left and will not affect the other blocks or elements)
+    absolute:- body ko parent manta h and ussi ke according apne aap ko change krta h. 
+                and agar parent bana diya jaaye to apne aap ko hi parent manta h;
+
+-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            max-height:100%;
+            max-width: 100%;
+            border: 2px black solid;
+            margin: 10px 20px 20px 30px;
+            padding: 30px;
+        }
+        div:nth-of-type(1){
+            background-color: rgb(0, 140, 255)
+        }
+        div{
+            background-color: hsl(360, 50%, 50%);
+        }
+        div > div {
+            max-height:50%;
+            max-width:50%;
+            margin:auto;
+            border: 2px black dashed ;
+            background-color: bisque;
+        }
+        ul{
+            font-size: 2em;
+        }
+        ul>ul{
+            font-size: 3rem;
+        }
+        section>div{
+            height:150px;
+            width:150px;
+            margin:10px;
+            display: inline-block;
+            border:2px black solid;
+        }
+        .static #middle {
+            position:static;
+            top:80px;
+            left:50px;
+        }
+        .relative #back{
+            position:relative;
+            top:80px;
+            left:50px;
+        }
+        .absolute #plum{
+            position:absolute;
+            top:550px;
+            left:250px;
+        }
+    </style>
+ </head>
+ <body>
+    <div>This is a div 1.</div>
+    <div>This is a div 2.</div>
+    <div>This is a div 3.</div>
+    <div>This is a div 4.</div>
+    <div>
+        <div>
+            <span>hey i am a span tag.</span>
+        </div>
+    </div>
+    <ul>
+        <li>yellow</li>
+        <li>green</li>
+        <li>blue</li>
+        <ul>
+            <li>purple</li>
+            <li>black</li>
+        </ul>
+        
+    </ul>
+    <section class="static">
+        <div style="background-color: red;"></div>
+        <div id="middle" style="background-color: ORANGE;"></div>
+        <div style="background-color: yellowgreen ;"></div>
+    </section><br>
+    <section class="relative">
+        <div style="background-color: brown;"></div>
+        <div id="back" style="background-color: burlywood;"></div>
+        <div style="background-color: gray ;"></div>
+    </section><br>
+    <section class="absolute">
+        <div style="background-color: mediumpurple;"></div>
+        <div id="plum" style="background-color: plum;"></div>
+        <div style="background-color: paleturquoise ;"></div>
+    </section>
+    
+ </body>
+ </html>
